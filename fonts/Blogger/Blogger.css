@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "Blogger Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("blogger-sans.regular.ttf") format("opentype"),
+    url("blogger-sans.regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Blogger Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("blogger-sans.medium.ttf") format("opentype"),
+    url("blogger-sans.medium.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "Blogger Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("blogger-sans.bold.ttf") format("opentype"),
+    url("blogger-sans.bold.ttf") format("opentype");
+}
