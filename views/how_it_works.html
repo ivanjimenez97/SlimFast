@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- css files -->
     <link rel="stylesheet" href="../css/bootstrap.css" />
@@ -14,62 +14,220 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../fonts/Blogger/Blogger.css" />
-</head>
-<body>
+  </head>
+  <body>
     <div class="container-fluid">
-        <iframe class="container" src="../elements/header.html" frameborder="0"></iframe>
-        <div class="container">
-            <img src="../img/how_it_works/right_for_you.png" alt="" width="100%">
-            <div class="row">
-                <div class="col-md-5">
-                    <img src="../img/how_it_works/slimfast_plan.png" alt="" width="50%">
-                    <img src="../img/how_it_works/rem_comida_1.png" alt="" width="50%">
-                    <img src="../img/how_it_works/dos_comidas_2.png" alt="" width="50%">
-                    <img src="../img/how_it_works/tres_ref_3.png" alt="" width="50%">
-                </div>
-                <div class="col-md-7">
-                    <p>
-                        Help maintain your weight, just replace any one meal with one SlimFast shake, enjoy two balanced meals of your choice, have three low-calorie snacks throughout the day. We recommend that you include food from the three groups, drinking enough water and doing at least 30 minutes of physical activity during the day, according to your needs and conditions. For more information about SlimFast, contact us at customercare@slimfast.com. SlimFast includes different Original Flavors to suit your preferences, including Chocolate, Vanilla, and Strawberry.
-                        The SlimFast weight management plan lets you choose what to eat so you can always stick to it, no matter how unpredictable your days can get. Don’t skip Sunday brunch with your friends or stay back when your coworkers head out for lunch together. Just make two balanced meals and have your shake or smoothie for your third meal. You’ll be amazed at how easy it is to plan meals when you have a daily routine that is easy to follow. 
-                        For maximum results, avoid sugar-sweetened beverages, like juice and sodas. They will only slow down your efforts and make you tired. Drink plenty of water and get in 30 minutes of daily exercise instead. You'll burn calories and feel energized, which will help you keep you smiling all the way to your goal weight. 
-                        You deserve 30 minutes of me-time every day. Make the time for a daily walk or pick a fun new activity to try!
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h4 class="text-center">¡Manten tu peso!</h4>
-                </div>
-                
-                <div class="col-md-4">
-                    <img src="../img/how_it_works/hit-goal.png" alt="">
-                    <p class="text-center">
-                        <b>To hit your goal: </b>Beber una malteada SlimFast, 
-                        disfrutar de dos comidas balanceadas y tomar tres 
-                        colaciones bajas en calorías durante el día.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <img src="../img/how_it_works/dont-stop.png" alt="">
-                    <p class="text-center">
-                        <b>Don’t stop exercising! </b>
-                        30 minutes a day gives you a much better chance of 
-                        maintaining your weight, and a positive attitude 
-                        that will brighten yours and everyone else’s day.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <img src="../img/how_it_works/hydrate_daily.png" alt="">
-                    <p class="text-center">
-                        <b>Hydrate Daily.  </b>To know how much water to drink, 
-                        multiple your Weight (kg) x 30 = equals the recommended 
-                        milliliters of water you should to drink daily.
-                    </p>
-                </div>
-            </div>
+      <header class="container">
+        <!-- nav-bar -->
+        <nav class="navbar bg-white navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../img/home/logo.png"
+              width="108"
+              height="40"
+              class="d-inline-block align-top logo"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  >Products</a
+                >
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../views/product_vainilla.html"
+                      >Producto Vainilla</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../views/product_fresa.html"
+                      >Producto Fresa</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../views/product_chocolate.html"
+                      >Producto Chocolate</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How It Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recipes</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- nav-bar ends -->
+      </header>
+
+      <div class="container">
+        <img src="../img/how_it_works/right_for_you.png" alt="" width="100%" />
+        <div class="row">
+          <div class="col-md-5">
+            <img
+              src="../img/how_it_works/slimfast_plan.png"
+              alt=""
+              width="50%"
+            />
+            <img
+              src="../img/how_it_works/rem_comida_1.png"
+              alt=""
+              width="50%"
+            />
+            <img
+              src="../img/how_it_works/dos_comidas_2.png"
+              alt=""
+              width="50%"
+            />
+            <img src="../img/how_it_works/tres_ref_3.png" alt="" width="50%" />
+          </div>
+          <div class="col-md-7">
+            <p>
+              Help maintain your weight, just replace any one meal with one
+              SlimFast shake, enjoy two balanced meals of your choice, have
+              three low-calorie snacks throughout the day. We recommend that you
+              include food from the three groups, drinking enough water and
+              doing at least 30 minutes of physical activity during the day,
+              according to your needs and conditions. For more information about
+              SlimFast, contact us at customercare@slimfast.com. SlimFast
+              includes different Original Flavors to suit your preferences,
+              including Chocolate, Vanilla, and Strawberry. The SlimFast weight
+              management plan lets you choose what to eat so you can always
+              stick to it, no matter how unpredictable your days can get. Don’t
+              skip Sunday brunch with your friends or stay back when your
+              coworkers head out for lunch together. Just make two balanced
+              meals and have your shake or smoothie for your third meal. You’ll
+              be amazed at how easy it is to plan meals when you have a daily
+              routine that is easy to follow. For maximum results, avoid
+              sugar-sweetened beverages, like juice and sodas. They will only
+              slow down your efforts and make you tired. Drink plenty of water
+              and get in 30 minutes of daily exercise instead. You'll burn
+              calories and feel energized, which will help you keep you smiling
+              all the way to your goal weight. You deserve 30 minutes of me-time
+              every day. Make the time for a daily walk or pick a fun new
+              activity to try!
+            </p>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="text-center">¡Manten tu peso!</h4>
+          </div>
+
+          <div class="col-md-4">
+            <img src="../img/how_it_works/hit-goal.png" alt="" />
+            <p class="text-center">
+              <b>To hit your goal: </b>Beber una malteada SlimFast, disfrutar de
+              dos comidas balanceadas y tomar tres colaciones bajas en calorías
+              durante el día.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="../img/how_it_works/dont-stop.png" alt="" />
+            <p class="text-center">
+              <b>Don’t stop exercising! </b>
+              30 minutes a day gives you a much better chance of maintaining
+              your weight, and a positive attitude that will brighten yours and
+              everyone else’s day.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="../img/how_it_works/hydrate_daily.png" alt="" />
+            <p class="text-center">
+              <b>Hydrate Daily. </b>To know how much water to drink, multiple
+              your Weight (kg) x 30 = equals the recommended milliliters of
+              water you should to drink daily.
+            </p>
+          </div>
+        </div>
+      </div>
+      <footer class="page-footer footer-container">
+        <!-- nav-bar -->
+        <div class="row footer">
+          <div class="col-md-8 offset-md-2 footer-title">
+            <h3>Navegación</h3>
+          </div>
+        </div>
+        <nav class="navbar bg-white navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <img
+              src="../img/home/footer-logo.png"
+              width="108"
+              height="40"
+              class="d-inline-block align-top logo"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recetas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Productos</a>
+                <a class="original">original</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cómo Funciona</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- nav-bar ends -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          2020 © SlimFast
+        </div>
+        <!-- Copyright -->
+      </footer>
     </div>
-</body>
+  </body>
   <!--Includes -->
 
   <script

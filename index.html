@@ -31,7 +31,7 @@
       <header class="container">
         <!-- nav-bar -->
         <nav class="navbar bg-white navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img
               src="img/home/logo.png"
               width="108"
@@ -56,8 +56,36 @@
             id="navbarNav"
           >
             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
+              <li class="nav-item dropdown">
+                <a
+                  id="navbarDropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  >Products</a
+                >
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="views/product_vainilla.html"
+                      >Producto Vainilla</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="views/product_fresa.html"
+                      >Producto Fresa</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="views/product_chocolate.html"
+                      >Producto Chocolate</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">How It Works</a>
@@ -70,7 +98,7 @@
         </nav>
         <!-- nav-bar ends -->
       </header>
-      <div class="jumbotron p-3 p-md-5 text-white"></div>
+      <div class="jumbotron container p-3 p-md-5 text-white"></div>
     </div>
     <!--Header ends-->
 
@@ -116,35 +144,68 @@
           nav: true,
         });
       </script>
-    </div>
-    <div class="plan container">
-      <div class="text-center plan-title">
-        <img src="img/home/plan-title.png" class="rounded" alt="..." />
+
+      <div class="plan container">
+        <div class="text-center plan-title">
+          <img src="img/home/plan-title.png" class="rounded" alt="..." />
+        </div>
+        <div class="row d-flex mx-auto">
+          <div class="item">
+            <img src="img/home/plan1.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/home/plan2.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="img/home/plan3.png" alt="" />
+          </div>
+        </div>
       </div>
-      <div class="row d-flex mx-auto">
-        <div class="item">
-          <img src="img/home/plan1.png" alt="" />
+      <!--Footer starts-->
+      <footer class="page-footer footer-container">
+        <!-- nav-bar -->
+        <div class="row footer">
+          <div class="col-md-8 offset-md-2 footer-title">
+            <h3>Navegación</h3>
+          </div>
         </div>
-        <div class="item">
-          <img src="img/home/plan2.png" alt="" />
+        <div class="container text-center text-md-left">
+          <div class="row">
+            <hr class="clearfix w-100 d-md-none" />
+            <div class="col-md-4 d-flex">
+              <ul class="list-unstyled d-flex">
+                <li>
+                  <img src="img/home/footer-logo.png" alt="" />
+                </li>
+              </ul>
+            </div>
+            <hr class="clearfix w-100 d-md-none" />
+            <div class="col-md-6 d-flex footer-menu">
+              <ul class="list-unstyled d-flex justify-content-around">
+                <li>
+                  <a href="#">Recetas</a>
+                </li>
+                <li>
+                  <a href="#">Productos Original</a>
+                </li>
+                <li>
+                  <a href="#">Cómo Funciona</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="item">
-          <img src="img/home/plan3.png" alt="" />
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          2020 © SlimFast
         </div>
-      </div>
+        <!-- Copyright -->
+      </footer>
+
+      <!--Footer ends-->
     </div>
+
     <!--Body Content Ends-->
-
-    <!--Footer starts-->
-    <div class="container-fluid">
-      <iframe
-        src="elements/footer.html"
-        class="container"
-        frameborder="0"
-      ></iframe>
-    </div>
-
-    <!--Footer ends-->
   </body>
   <!--Includes -->
 

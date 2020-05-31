@@ -3,16 +3,15 @@
 html {
   body {
     .container-fluid {
-      .container {
+      /*       .container {
         display: flex;
         margin: 0 auto;
-      }
+      } */
       .jumbotron {
         background: url("../img/home/header.png") center no-repeat;
         background-size: cover;
         height: 423px;
         margin-top: -20px;
-        margin: 0 auto;
         max-width: 1440px;
       }
     }
@@ -47,12 +46,19 @@ body {
             font-size: 16px;
             font-weight: 500;
           }
+          .dropdown-item {
+            color: #4f4f4f;
+            font-family: $font-blogger-medium;
+            font-size: 16px;
+            font-weight: 500;
+          }
         }
       }
     }
   }
   //Body content Styling
   .body-content {
+    max-width: 1300px;
     .jumbotron {
       background-color: unset;
       max-width: 818px;
@@ -88,58 +94,55 @@ body {
       font-size: 24px;
       font-weight: bold;
     }
-  }
-  .plan {
-    max-width: 1300px;
-    .plan-title {
-      margin-bottom: 50px;
-    }
-    .row {
+    .plan {
       max-width: 1300px;
-      margin-bottom: 200px;
-      .item {
-        flex-grow: 0;
-        margin-right: 20px;
-        img {
-          width: 391px;
-          height: 179px;
-          :nth-child(2) > img {
-            height: 175px;
+      .plan-title {
+        margin-bottom: 50px;
+      }
+      .row {
+        max-width: 1300px;
+        margin-bottom: 200px;
+        .item {
+          flex-grow: 0;
+          margin-right: 20px;
+          img {
+            width: 391px;
+            height: 179px;
+            :nth-child(2) > img {
+              height: 175px;
+            }
           }
         }
       }
     }
   }
+
   //Footer Styling
   footer {
-    .footer > .footer-title > h3 {
-      text-align: center;
-      color: #dd0031;
-      font-family: $font-blogger-medium;
-      font-size: 20px;
-      font-weight: 500;
+    .footer {
+      > .footer-title > h3 {
+        text-align: center;
+        color: #dd0031;
+        font-family: $font-blogger-medium;
+        font-size: 20px;
+        font-weight: 500;
+      }
     }
-    .navbar-light .navbar-nav {
-      .nav-item {
-        .nav-link {
-          height: 22px;
-          color: #2f2d2d;
-          font-family: $font-pt-sans;
-          font-size: 14px;
-          font-weight: 700;
-          line-height: 22px;
-          text-transform: uppercase;
-          margin-right: 65px;
-        }
-        .original {
-          font-family: $font-pt-sans;
-          font-size: 12px;
-          font-weight: 400;
-          line-height: 19px;
-          margin-left: 10px;
-        }
-        &:hover a {
-          color: #de1a33;
+    .container {
+      .footer-menu {
+        ul {
+          li {
+            a {
+              width: 57px;
+              height: 22px;
+              color: #2f2d2d;
+              font-family: $font-pt-sans;
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 22px;
+              text-transform: uppercase;
+            }
+          }
         }
       }
     }
