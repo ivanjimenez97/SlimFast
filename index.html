@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/body.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.theme.default.css"
+    />
+
     <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
@@ -17,14 +26,125 @@
     <link rel="stylesheet" href="fonts/Blogger/Blogger.css" />
   </head>
   <body>
-    <!--Header-->
+    <div class="container-fluid">
+      <!--Header-->
+      <header class="container">
+        <!-- nav-bar -->
+        <nav class="navbar bg-white navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <img
+              src="img/home/logo.png"
+              width="108"
+              height="40"
+              class="d-inline-block align-top logo"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">How It Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recipes</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- nav-bar ends -->
+      </header>
+      <div class="jumbotron p-3 p-md-5 text-white"></div>
+    </div>
+    <!--Header ends-->
+
+    <!--Body Content-->
+    <div class="container body-content">
+      <div class="jumbotron text-center">
+        <p class="title">SlimFast Original – Taste You’ll Love!</p>
+        <p class="content">
+          SlimFast Original shake powders are the timeless classic that are
+          delicious and help you manage your weight.
+        </p>
+      </div>
+
+      <div class="jumbotron text-center">
+        <p class="title">It is Delicious</p>
+        <p class="content">
+          There is a reason why the SlimFast Original shakes have remained
+          popular for so many years…they taste great. Packed with 14g of
+          protein, when mixed with skim milk, and 21 vitamins and minerals, each
+          shake helps you maintain your weight and taste like an indulgent
+          treat!
+        </p>
+      </div>
+      <div class="jumbotron text-center">
+        <p class="title">It is Flexible</p>
+        <p class="content">
+          SlimFast shake powders are versatile to enjoy at home, work, or
+          on-the-go. Blend up your favorite custom breakfast creation and add a
+          little more deliciousness to your day! See our recipes for delicious
+          inspiration.
+        </p>
+      </div>
+      <div class="owl-carousel">
+        <div><img src="img/home/vainillabote.png" alt="" /></div>
+        <div><img src="img/home/fresabote.png" alt="" /></div>
+        <div><img src="img/home/chocolatebote.png" alt="" /></div>
+      </div>
+      <script>
+        $(".owl-carousel").owlCarousel({
+          autoplay: true,
+          center: true,
+          loop: true,
+          nav: true,
+        });
+      </script>
+    </div>
+    <div class="plan container">
+      <div class="text-center plan-title">
+        <img src="img/home/plan-title.png" class="rounded" alt="..." />
+      </div>
+      <div class="row d-flex mx-auto">
+        <div class="item">
+          <img src="img/home/plan1.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="img/home/plan2.png" alt="" />
+        </div>
+        <div class="item">
+          <img src="img/home/plan3.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!--Body Content Ends-->
+
+    <!--Footer starts-->
     <div class="container-fluid">
       <iframe
-        src="elements/header.html"
+        src="elements/footer.html"
         class="container"
         frameborder="0"
       ></iframe>
     </div>
+
+    <!--Footer ends-->
   </body>
   <!--Includes -->
 
@@ -43,4 +163,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"
   ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
 </html>
