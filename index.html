@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Slim Fast</title>
 
     <!-- css files -->
@@ -55,24 +56,22 @@
             class="collapse navbar-collapse justify-content-end"
             id="navbarNav"
           >
-            <ul class="navbar-nav">
+            <ul class="nav navbar-nav ml-auto">
               <li class="nav-item dropdown">
                 <a
-                  id="navbarDropdownMenuLink"
+                  class="nav-link dropdown-toggle"
+                  id="navbarDropdown1"
+                  data-target="#"
+                  href="#"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
-                  class="nav-link dropdown-toggle"
-                  href="#"
                   >Products</a
                 >
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdownMenuLink"
-                >
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
                   <li>
                     <a class="dropdown-item" href="views/product_vainilla.html"
-                      >Producto Vainilla</a
+                      >Product Vainilla</a
                     >
                   </li>
                   <li>
@@ -88,79 +87,84 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">How It Works</a>
+                <a class="nav-link" href="views/how_it_works.html"
+                  >How It Works</a
+                >
               </li>
+
               <li class="nav-item">
-                <a class="nav-link" href="#">Recipes</a>
+                <a class="nav-link" href="views/recipes.html">Recipes</a>
               </li>
             </ul>
           </div>
         </nav>
         <!-- nav-bar ends -->
       </header>
-      <div class="jumbotron container p-3 p-md-5 text-white"></div>
-    </div>
-    <!--Header ends-->
-
-    <!--Body Content-->
-    <div class="container body-content">
-      <div class="jumbotron text-center">
-        <p class="title">SlimFast Original – Taste You’ll Love!</p>
-        <p class="content">
-          SlimFast Original shake powders are the timeless classic that are
-          delicious and help you manage your weight.
-        </p>
+      <div class="jumbotron container image-hero mx-auto text-white">
+        <img src="img/home/header.png" alt="" />
       </div>
 
-      <div class="jumbotron text-center">
-        <p class="title">It is Delicious</p>
-        <p class="content">
-          There is a reason why the SlimFast Original shakes have remained
-          popular for so many years…they taste great. Packed with 14g of
-          protein, when mixed with skim milk, and 21 vitamins and minerals, each
-          shake helps you maintain your weight and taste like an indulgent
-          treat!
-        </p>
-      </div>
-      <div class="jumbotron text-center">
-        <p class="title">It is Flexible</p>
-        <p class="content">
-          SlimFast shake powders are versatile to enjoy at home, work, or
-          on-the-go. Blend up your favorite custom breakfast creation and add a
-          little more deliciousness to your day! See our recipes for delicious
-          inspiration.
-        </p>
-      </div>
-      <div class="owl-carousel">
-        <div><img src="img/home/vainillabote.png" alt="" /></div>
-        <div><img src="img/home/fresabote.png" alt="" /></div>
-        <div><img src="img/home/chocolatebote.png" alt="" /></div>
-      </div>
-      <script>
-        $(".owl-carousel").owlCarousel({
-          autoplay: true,
-          center: true,
-          loop: true,
-          nav: true,
-        });
-      </script>
-
-      <div class="plan container">
-        <div class="text-center plan-title">
-          <img src="img/home/plan-title.png" class="rounded" alt="..." />
+      <!--Body Content-->
+      <div class="container body-content">
+        <div class="jumbotron text-center">
+          <p class="title">SlimFast Original – Taste You’ll Love!</p>
+          <p class="content">
+            SlimFast Original shake powders are the timeless classic that are
+            delicious and help you manage your weight.
+          </p>
         </div>
-        <div class="row d-flex mx-auto">
-          <div class="item">
-            <img src="img/home/plan1.png" alt="" />
+
+        <div class="jumbotron text-center">
+          <p class="title">It is Delicious</p>
+          <p class="content">
+            There is a reason why the SlimFast Original shakes have remained
+            popular for so many years…they taste great. Packed with 14g of
+            protein, when mixed with skim milk, and 21 vitamins and minerals,
+            each shake helps you maintain your weight and taste like an
+            indulgent treat!
+          </p>
+        </div>
+        <div class="jumbotron text-center">
+          <p class="title">It is Flexible</p>
+          <p class="content">
+            SlimFast shake powders are versatile to enjoy at home, work, or
+            on-the-go. Blend up your favorite custom breakfast creation and add
+            a little more deliciousness to your day! See our recipes for
+            delicious inspiration.
+          </p>
+        </div>
+        <div class="owl-carousel">
+          <div><img src="img/home/vainillabote.png" alt="" /></div>
+          <div><img src="img/home/fresabote.png" alt="" /></div>
+          <div><img src="img/home/chocolatebote.png" alt="" /></div>
+        </div>
+        <script>
+          $(".owl-carousel").owlCarousel({
+            autoplay: true,
+            center: true,
+            loop: true,
+            nav: true,
+          });
+        </script>
+
+        <div class="plan container">
+          <div class="text-center plan-title">
+            <img src="img/home/plan-title.png" class="rounded" alt="..." />
           </div>
-          <div class="item">
-            <img src="img/home/plan2.png" alt="" />
-          </div>
-          <div class="item">
-            <img src="img/home/plan3.png" alt="" />
+          <div class="row d-flex justify-content-center mx-auto">
+            <div class="item">
+              <img src="img/home/plan1.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="img/home/plan2.png" alt="" />
+            </div>
+            <div class="item">
+              <img src="img/home/plan3.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
+
       <!--Footer starts-->
       <footer class="page-footer footer-container">
         <!-- nav-bar -->
@@ -172,7 +176,7 @@
         <div class="container text-center text-md-left">
           <div class="row">
             <hr class="clearfix w-100 d-md-none" />
-            <div class="col-md-4 d-flex">
+            <div class="col-md-4 d-flex justify-content-center">
               <ul class="list-unstyled d-flex">
                 <li>
                   <img src="img/home/footer-logo.png" alt="" />
@@ -180,13 +184,16 @@
               </ul>
             </div>
             <hr class="clearfix w-100 d-md-none" />
-            <div class="col-md-6 d-flex footer-menu">
-              <ul class="list-unstyled d-flex justify-content-around">
+            <div
+              class="col-sm-12 col-md-6 d-flex justify-content-center align-items-center footer-menu"
+            >
+              <ul class="list-unstyled d-md-flex justify-content-around">
                 <li>
                   <a href="#">Recetas</a>
                 </li>
                 <li>
-                  <a href="#">Productos Original</a>
+                  <a href="#">Productos</a><br />
+                  <a class="original" href="">Original</a>
                 </li>
                 <li>
                   <a href="#">Cómo Funciona</a>
@@ -204,6 +211,7 @@
 
       <!--Footer ends-->
     </div>
+    <!--Header ends-->
 
     <!--Body Content Ends-->
   </body>

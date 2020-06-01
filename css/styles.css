@@ -1,17 +1,12 @@
-html body .container-fluid {
-  /*       .container {
-    display: flex;
-    margin: 0 auto;
-  } */
-}
-html body .container-fluid .jumbotron {
-  background: url("../img/home/header.png") center no-repeat;
-  background-size: cover;
-  height: 423px;
+body .jumbotron.image-hero {
   margin-top: -20px;
   max-width: 1440px;
+  padding: 0;
+  background-color: unset;
 }
-
+body .jumbotron.image-hero img {
+  width: 100%;
+}
 body header {
   width: 1205px;
   background-color: none;
@@ -24,6 +19,7 @@ body header .navbar {
   border-radius: 10px;
 }
 body header .navbar .navbar-nav {
+  background: #fff;
   width: 100%;
   max-width: 300px;
   justify-content: space-around;
@@ -99,20 +95,29 @@ body .body-content .plan .row .item {
   margin-right: 20px;
 }
 body .body-content .plan .row .item img {
-  width: 391px;
+  width: 100%;
   height: 179px;
+  max-width: 391px;
 }
-body .body-content .plan .row .item img :nth-child(2) > img {
-  height: 175px;
+
+footer {
+  background-color: #f8f8f8;
 }
-body footer .footer > .footer-title > h3 {
+footer .footer {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+footer .footer > .footer-title > h3 {
   text-align: center;
   color: #dd0031;
   font-family: "Blogger Medium";
   font-size: 20px;
   font-weight: 500;
 }
-body footer .container .footer-menu ul li a {
+footer .container .row .footer-menu {
+  margin-left: 10px;
+}
+footer .container .row .footer-menu ul li a {
   width: 57px;
   height: 22px;
   color: #2f2d2d;
@@ -121,13 +126,64 @@ body footer .container .footer-menu ul li a {
   font-weight: 700;
   line-height: 22px;
   text-transform: uppercase;
+  margin-right: 70px;
 }
-body footer .footer-copyright {
+footer .container .row .footer-menu ul li a:hover {
+  text-decoration: none;
+}
+footer .container .row .footer-menu ul li a.original {
+  text-transform: lowercase;
+  font-weight: 400;
+}
+footer .container .row .footer-menu ul li:hover a {
+  color: #de1a33;
+}
+footer .footer-copyright {
   height: 16px;
   color: #2f2d2d;
   font-family: "PT Sans", sans-serif;
   font-size: 12px;
   font-weight: 700;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 575px) {
+  body #navbarNav > ul > li.nav-item.dropdown.show > ul {
+    position: absolute;
+  }
+  body header .navbar .navbar-nav {
+    padding: 20px;
+    box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.32);
+    border-radius: 4px;
+  }
+  body .body-content .plan .plan-title img {
+    width: 100%;
+  }
+  body .body-content .plan .row {
+    margin-bottom: 10px;
+  }
+  body .body-content .plan .row .item {
+    margin-right: 0px;
+  }
+  body footer .footer {
+    padding: 20px 0px;
+  }
+  body footer .container .row .footer-menu ul li {
+    margin-top: 30px;
+  }
+  body footer .container .row .footer-menu ul li a {
+    margin-right: 0px;
+  }
+  body footer .footer-copyright {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 576px) {
+  body #navbarNav > ul > li.nav-item.dropdown.show > ul {
+    position: absolute;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
