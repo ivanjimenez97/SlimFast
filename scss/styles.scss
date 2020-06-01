@@ -11,6 +11,7 @@ body {
     img {
       width: 100%;
     }
+    
   }
   header {
     width: 1205px;
@@ -49,6 +50,39 @@ body {
       }
     }
   }
+
+  .breadcrumb{
+      background-color: #f8f8f8;
+    }
+    .img-info-container{
+      position: relative;
+      img{
+        
+        width: 100%;
+        border-radius: 5px;
+        height: auto;
+      }
+      .img-info-container-child{
+        position: absolute;
+        background: #fff;
+        width: 606px;
+        height: 246px;
+        border-radius: 0 0 0 5px;
+        bottom: 0px;
+        div{
+          margin-top: 44px;
+          margin-right: 94px;
+          margin-left: 36px;
+          margin-bottom: 47px;
+        }
+        .social-network-logo{
+          width: 30px;
+          height: 30px;
+          
+        }
+      }
+    }
+
   //Body content Styling
   .body-content {
     max-width: 1300px;
@@ -174,6 +208,15 @@ footer {
       box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.32);
       border-radius: 4px;
     }
+
+    /*Recipe Single Styling*/
+    .img-info-container{
+      .img-info-container-child{
+        width: 100%;
+        position: relative;
+      }
+    }
+    /*Plans*/
     .body-content .plan {
       .plan-title {
         img {
